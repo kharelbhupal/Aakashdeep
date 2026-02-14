@@ -554,22 +554,23 @@ a {
   }
 
   .kicker {
-    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-size: 1rem;
     padding: 0.4rem 3rem;
   }
 
   .hero-btns {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.75rem;
   }
 
   .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0.75rem;
   }
 
   .stat-number {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .stat-label {
