@@ -443,9 +443,9 @@ a {
   transition: var(--transition);
   background:
     linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url("./img/neo/hh.jpg");
+    url("./img/cover.png");
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
 }
 
@@ -926,7 +926,37 @@ footer {
   color: var(--text-muted);
   font-size: 0.875rem;
 }
+@media (max-width: 450px) {
+  .floating-social {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 999px;
+    z-index: 9999;
+  }
+  .floating-social a {
+    padding: 1.3rem;
+    background-color: hsla(0, 0%, 100%, 1);
+  }
+  .floating-social i {
+    font-size: 1.2rem;
+  }
 
+  .social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--glass);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: var(--transition);
+  }
+}
 /* Gallery Part */
 .gallery-filters {
   display: flex;
