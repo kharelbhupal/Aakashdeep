@@ -931,8 +931,43 @@ footer {
     position: fixed;
     bottom: 0px;
     display: flex;
+    left: 50%;
+    transform: translateX(-50%);
     gap: 1rem;
-    padding: 0.5rem 0.75rem;
+    padding: 0.3rem 0.55rem;
+    border-radius: 999px;
+    z-index: 9999;
+  }
+  .floating-social a {
+    padding: 1.3rem;
+    background-color: hsla(0, 0%, 100%, 1);
+  }
+  .floating-social i {
+    font-size: 1.2rem;
+  }
+
+  .social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--glass);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: var(--transition);
+  }
+}
+@media (max-width: 600px) {
+  .floating-social {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 1rem;
+    padding: 0.3rem 0.55rem;
     border-radius: 999px;
     z-index: 9999;
   }
