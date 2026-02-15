@@ -430,7 +430,6 @@ a {
   }
 }
 /* Hero Part */
-/* Hero Section Base */
 .hero {
   margin-top: 0;
   height: 100vh;
@@ -512,7 +511,7 @@ a {
 
 .stat-item:hover {
   transform: translateY(-5px);
-  border-color: rgba(100, 255, 218, 0.3);
+  border-color: #ffa500;
 }
 
 .stat-number {
