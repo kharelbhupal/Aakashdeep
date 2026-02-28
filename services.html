@@ -19,85 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-    <style>
-      /* Page-specific styles */
-      .page-header {
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-          url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80");
-        background-size: cover;
-        background-position: center;
-        padding: 120px 0 60px;
-        text-align: center;
-        border-bottom: 2px solid var(--accent-primary);
-      }
-
-      .page-header h1 {
-        font-size: clamp(2.5rem, 5vw, 4rem);
-        margin-bottom: 1rem;
-      }
-
-      .page-header p {
-        max-width: 700px;
-        margin: 0 auto;
-        font-size: 1.1rem;
-      }
-
-      .service-category {
-        margin-bottom: 4rem;
-      }
-
-      .service-category h3 {
-        color: var(--accent-primary);
-        margin-bottom: 2rem;
-        padding-bottom: 0.5rem;
-        border-bottom: 2px solid var(--glass-border);
-      }
-
-      .process-steps {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 2rem;
-        margin: 4rem 0;
-      }
-
-      .step-card {
-        text-align: center;
-        padding: 2rem;
-        background: var(--bg-card);
-        border-radius: var(--radius);
-        border: 1px solid var(--glass-border);
-        position: relative;
-      }
-
-      .step-number {
-        width: 50px;
-        height: 50px;
-        background: var(--accent-primary);
-        color: var(--bg-primary);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-        font-weight: 800;
-        margin: 0 auto 1.5rem;
-      }
-
-      .cta-section {
-        background: var(--bg-card);
-        border-radius: var(--radius-lg);
-        padding: 4rem;
-        text-align: center;
-        margin: 4rem 0;
-        border: 1px solid var(--accent-primary);
-      }
-
-      @media (max-width: 768px) {
-        .cta-section {
-          padding: 2rem;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./services.css" />
   </head>
   <body>
     <!-- Header & Navigation -->
@@ -142,7 +64,10 @@
       <div class="container">
         <!-- Highway & Road Design -->
         <div class="service-category animate-on-scroll">
-          <h3><i class="fas fa-road" style="margin-right: 1rem;"></i> Highway & Road Design</h3>
+          <h3>
+            <i class="fas fa-road" style="margin-right: 1rem"></i> Highway &
+            Road Design
+          </h3>
           <div class="services-grid">
             <div class="service-card">
               <div class="service-icon">
@@ -150,7 +75,8 @@
               </div>
               <h4>Alignment Optimization</h4>
               <p class="text-muted">
-                Advanced geometric design optimizing horizontal and vertical alignments for safety, efficiency, and cost-effectiveness.
+                Advanced geometric design optimizing horizontal and vertical
+                alignments for safety, efficiency, and cost-effectiveness.
               </p>
             </div>
             <div class="service-card">
@@ -159,7 +85,8 @@
               </div>
               <h4>Pavement Design</h4>
               <p class="text-muted">
-                Flexible and rigid pavement solutions using latest design standards and materials for long-lasting performance.
+                Flexible and rigid pavement solutions using latest design
+                standards and materials for long-lasting performance.
               </p>
             </div>
             <div class="service-card">
@@ -168,7 +95,8 @@
               </div>
               <h4>Junction Modelling</h4>
               <p class="text-muted">
-                Signalized and unsignalized junction design with micro-simulation modeling for optimal traffic flow.
+                Signalized and unsignalized junction design with
+                micro-simulation modeling for optimal traffic flow.
               </p>
             </div>
             <div class="service-card">
@@ -177,7 +105,8 @@
               </div>
               <h4>Traffic Assessments</h4>
               <p class="text-muted">
-                Comprehensive traffic impact studies and transport assessments for development projects.
+                Comprehensive traffic impact studies and transport assessments
+                for development projects.
               </p>
             </div>
           </div>
@@ -185,7 +114,10 @@
 
         <!-- Bridge Engineering -->
         <div class="service-category animate-on-scroll">
-          <h3><i class="fas fa-bridge" style="margin-right: 1rem;"></i> Bridge Engineering</h3>
+          <h3>
+            <i class="fas fa-bridge" style="margin-right: 1rem"></i> Bridge
+            Engineering
+          </h3>
           <div class="services-grid">
             <div class="service-card">
               <div class="service-icon">
@@ -193,7 +125,8 @@
               </div>
               <h4>Bridge Inspection</h4>
               <p class="text-muted">
-                Detailed visual and non-destructive testing to assess structural condition and identify defects.
+                Detailed visual and non-destructive testing to assess structural
+                condition and identify defects.
               </p>
             </div>
             <div class="service-card">
@@ -202,7 +135,8 @@
               </div>
               <h4>Load Rating</h4>
               <p class="text-muted">
-                Assessment of bridge load-carrying capacity to current standards and vehicle loadings.
+                Assessment of bridge load-carrying capacity to current standards
+                and vehicle loadings.
               </p>
             </div>
             <div class="service-card">
@@ -211,7 +145,8 @@
               </div>
               <h4>Refurbishment</h4>
               <p class="text-muted">
-                Strengthening, repair, and rehabilitation designs to extend bridge service life.
+                Strengthening, repair, and rehabilitation designs to extend
+                bridge service life.
               </p>
             </div>
             <div class="service-card">
@@ -220,7 +155,8 @@
               </div>
               <h4>New-Build Design</h4>
               <p class="text-muted">
-                Complete design of pedestrian, highway, and railway bridges using advanced analysis tools.
+                Complete design of pedestrian, highway, and railway bridges
+                using advanced analysis tools.
               </p>
             </div>
           </div>
@@ -228,7 +164,10 @@
 
         <!-- Drainage & Flood Mitigation -->
         <div class="service-category animate-on-scroll">
-          <h3><i class="fas fa-water" style="margin-right: 1rem;"></i> Drainage & Flood Mitigation</h3>
+          <h3>
+            <i class="fas fa-water" style="margin-right: 1rem"></i> Drainage &
+            Flood Mitigation
+          </h3>
           <div class="services-grid">
             <div class="service-card">
               <div class="service-icon">
@@ -236,7 +175,8 @@
               </div>
               <h4>Sustainable Drainage (SuDS)</h4>
               <p class="text-muted">
-                Permeable pavements, rain gardens, and swales to manage runoff naturally and improve water quality.
+                Permeable pavements, rain gardens, and swales to manage runoff
+                naturally and improve water quality.
               </p>
             </div>
             <div class="service-card">
@@ -245,7 +185,8 @@
               </div>
               <h4>Attenuation Solutions</h4>
               <p class="text-muted">
-                Pond, tank, and basin design to store and release stormwater at controlled rates.
+                Pond, tank, and basin design to store and release stormwater at
+                controlled rates.
               </p>
             </div>
             <div class="service-card">
@@ -254,7 +195,8 @@
               </div>
               <h4>Hydraulic Modelling</h4>
               <p class="text-muted">
-                1D/2D flood modeling using industry-standard software to predict and mitigate flood risk.
+                1D/2D flood modeling using industry-standard software to predict
+                and mitigate flood risk.
               </p>
             </div>
             <div class="service-card">
@@ -263,7 +205,8 @@
               </div>
               <h4>Pumping Stations</h4>
               <p class="text-muted">
-                Design of pumping stations for flood defense and surface water management.
+                Design of pumping stations for flood defense and surface water
+                management.
               </p>
             </div>
           </div>
@@ -271,7 +214,10 @@
 
         <!-- Geotechnical Solutions -->
         <div class="service-category animate-on-scroll">
-          <h3><i class="fas fa-mountain" style="margin-right: 1rem;"></i> Geotechnical Solutions</h3>
+          <h3>
+            <i class="fas fa-mountain" style="margin-right: 1rem"></i>
+            Geotechnical Solutions
+          </h3>
           <div class="services-grid">
             <div class="service-card">
               <div class="service-icon">
@@ -279,7 +225,8 @@
               </div>
               <h4>Retaining Walls</h4>
               <p class="text-muted">
-                Gravity, cantilever, and anchored wall designs for earth retention in challenging sites.
+                Gravity, cantilever, and anchored wall designs for earth
+                retention in challenging sites.
               </p>
             </div>
             <div class="service-card">
@@ -288,7 +235,8 @@
               </div>
               <h4>Soil Nailing</h4>
               <p class="text-muted">
-                In-situ reinforcement of steep slopes and excavations for permanent and temporary works.
+                In-situ reinforcement of steep slopes and excavations for
+                permanent and temporary works.
               </p>
             </div>
             <div class="service-card">
@@ -297,7 +245,8 @@
               </div>
               <h4>Slope Stability</h4>
               <p class="text-muted">
-                Advanced analysis and stabilization design for natural and cut slopes.
+                Advanced analysis and stabilization design for natural and cut
+                slopes.
               </p>
             </div>
             <div class="service-card">
@@ -306,7 +255,8 @@
               </div>
               <h4>Foundation Design</h4>
               <p class="text-muted">
-                Shallow and deep foundation solutions tailored to ground conditions and structural loads.
+                Shallow and deep foundation solutions tailored to ground
+                conditions and structural loads.
               </p>
             </div>
           </div>
@@ -314,7 +264,10 @@
 
         <!-- BIM & Digital Engineering -->
         <div class="service-category animate-on-scroll">
-          <h3><i class="fas fa-cube" style="margin-right: 1rem;"></i> BIM & Digital Engineering</h3>
+          <h3>
+            <i class="fas fa-cube" style="margin-right: 1rem"></i> BIM & Digital
+            Engineering
+          </h3>
           <div class="services-grid">
             <div class="service-card">
               <div class="service-icon">
@@ -322,7 +275,8 @@
               </div>
               <h4>3D Modelling</h4>
               <p class="text-muted">
-                Intelligent 3D models with embedded data for design, visualization, and coordination.
+                Intelligent 3D models with embedded data for design,
+                visualization, and coordination.
               </p>
             </div>
             <div class="service-card">
@@ -331,7 +285,8 @@
               </div>
               <h4>Clash Detection</h4>
               <p class="text-muted">
-                Automated clash detection and resolution across all disciplines before construction.
+                Automated clash detection and resolution across all disciplines
+                before construction.
               </p>
             </div>
             <div class="service-card">
@@ -340,7 +295,8 @@
               </div>
               <h4>4D/5D BIM</h4>
               <p class="text-muted">
-                Time (4D) and cost (5D) integration for enhanced project planning and control.
+                Time (4D) and cost (5D) integration for enhanced project
+                planning and control.
               </p>
             </div>
             <div class="service-card">
@@ -349,7 +305,8 @@
               </div>
               <h4>Digital Twins</h4>
               <p class="text-muted">
-                Real-time digital replicas for asset management and lifecycle monitoring.
+                Real-time digital replicas for asset management and lifecycle
+                monitoring.
               </p>
             </div>
           </div>
@@ -357,7 +314,10 @@
 
         <!-- Structural Assessment -->
         <div class="service-category animate-on-scroll">
-          <h3><i class="fas fa-clipboard-check" style="margin-right: 1rem;"></i> Structural Assessment</h3>
+          <h3>
+            <i class="fas fa-clipboard-check" style="margin-right: 1rem"></i>
+            Structural Assessment
+          </h3>
           <div class="services-grid">
             <div class="service-card">
               <div class="service-icon">
@@ -365,7 +325,8 @@
               </div>
               <h4>Structural Analysis</h4>
               <p class="text-muted">
-                Detailed analysis of existing structures using advanced finite element methods.
+                Detailed analysis of existing structures using advanced finite
+                element methods.
               </p>
             </div>
             <div class="service-card">
@@ -374,7 +335,8 @@
               </div>
               <h4>Condition Surveys</h4>
               <p class="text-muted">
-                Systematic inspection and reporting of structural defects and deterioration.
+                Systematic inspection and reporting of structural defects and
+                deterioration.
               </p>
             </div>
             <div class="service-card">
@@ -383,7 +345,8 @@
               </div>
               <h4>Remediation Strategies</h4>
               <p class="text-muted">
-                Cost-effective repair and strengthening solutions for deficient structures.
+                Cost-effective repair and strengthening solutions for deficient
+                structures.
               </p>
             </div>
             <div class="service-card">
@@ -392,19 +355,21 @@
               </div>
               <h4>Structural Monitoring</h4>
               <p class="text-muted">
-                Installation and analysis of monitoring systems for critical structures.
+                Installation and analysis of monitoring systems for critical
+                structures.
               </p>
             </div>
           </div>
         </div>
 
         <!-- Our Process -->
-        <div class="animate-on-scroll" style="margin: 6rem 0 2rem;">
+        <div class="animate-on-scroll" style="margin: 6rem 0 2rem">
           <div class="section-header">
             <div class="section-subtitle">How We Work</div>
             <h2>Our Engineering Process</h2>
             <p>
-              A systematic approach ensuring quality, efficiency, and innovation at every stage.
+              A systematic approach ensuring quality, efficiency, and innovation
+              at every stage.
             </p>
           </div>
         </div>
@@ -413,30 +378,50 @@
           <div class="step-card animate-on-scroll">
             <div class="step-number">1</div>
             <h4>Discovery</h4>
-            <p class="text-muted">Understanding your requirements, site conditions, and project constraints.</p>
+            <p class="text-muted">
+              Understanding your requirements, site conditions, and project
+              constraints.
+            </p>
           </div>
           <div class="step-card animate-on-scroll">
             <div class="step-number">2</div>
             <h4>Concept Design</h4>
-            <p class="text-muted">Developing and evaluating multiple solutions to identify the optimal approach.</p>
+            <p class="text-muted">
+              Developing and evaluating multiple solutions to identify the
+              optimal approach.
+            </p>
           </div>
           <div class="step-card animate-on-scroll">
             <div class="step-number">3</div>
             <h4>Detailed Design</h4>
-            <p class="text-muted">Comprehensive calculations, drawings, and specifications for construction.</p>
+            <p class="text-muted">
+              Comprehensive calculations, drawings, and specifications for
+              construction.
+            </p>
           </div>
           <div class="step-card animate-on-scroll">
             <div class="step-number">4</div>
             <h4>Construction Support</h4>
-            <p class="text-muted">Site inspections, technical support, and design modifications as needed.</p>
+            <p class="text-muted">
+              Site inspections, technical support, and design modifications as
+              needed.
+            </p>
           </div>
         </div>
 
         <!-- CTA Section -->
         <div class="cta-section animate-on-scroll">
           <h2>Ready to Start Your Project?</h2>
-          <p style="margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-            Contact our team of expert engineers to discuss your requirements and get a tailored solution.
+          <p
+            style="
+              margin-bottom: 2rem;
+              max-width: 600px;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          >
+            Contact our team of expert engineers to discuss your requirements
+            and get a tailored solution.
           </p>
           <a href="index.html#contact" class="btn-primary">
             <i class="fas fa-paper-plane"></i> Get in Touch
@@ -451,7 +436,11 @@
         <div class="footer-container">
           <div class="footer-logo">
             <a href="index.html" class="logo">
-              <img src="./img/logo.svg" alt="Aakashdeep Logo" class="logo-icon" />
+              <img
+                src="./img/logo.svg"
+                alt="Aakashdeep Logo"
+                class="logo-icon"
+              />
               <div>
                 <div class="logo-text">Aakashdeep</div>
                 <div class="logo-subtext">Construction & Engineering.</div>
@@ -501,7 +490,8 @@
         </div>
 
         <div class="copyright">
-          © <span id="year">2025</span> Aakashdeep Construction & Engineering • Registered in England & Wales • Company No: 12345678
+          © <span id="year">2025</span> Aakashdeep Construction & Engineering •
+          Registered in England & Wales • Company No: 12345678
         </div>
       </div>
     </footer>
@@ -538,14 +528,15 @@
     <script src="index.js"></script>
     <script>
       // Add active class to current page in navigation
-      document.addEventListener('DOMContentLoaded', function() {
-        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-        const navLinks = document.querySelectorAll('.nav-link');
-        
-        navLinks.forEach(link => {
-          const linkPage = link.getAttribute('href');
+      document.addEventListener("DOMContentLoaded", function () {
+        const currentPage =
+          window.location.pathname.split("/").pop() || "index.html";
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        navLinks.forEach((link) => {
+          const linkPage = link.getAttribute("href");
           if (linkPage === currentPage) {
-            link.classList.add('active');
+            link.classList.add("active");
           }
         });
       });

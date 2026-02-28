@@ -19,193 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-    <style>
-      /* Page-specific styles */
-      .page-header {
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-          url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80");
-        background-size: cover;
-        background-position: center;
-        padding: 120px 0 60px;
-        text-align: center;
-        border-bottom: 2px solid var(--accent-primary);
-      }
-
-      .page-header h1 {
-        font-size: clamp(2.5rem, 5vw, 4rem);
-        margin-bottom: 1rem;
-      }
-
-      .page-header p {
-        max-width: 700px;
-        margin: 0 auto;
-        font-size: 1.1rem;
-      }
-
-      .team-grid-expanded {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 2.5rem;
-        margin: 3rem 0;
-      }
-
-      .team-card-large {
-        background: var(--bg-card);
-        border-radius: var(--radius);
-        padding: 2.5rem 2rem;
-        border: 1px solid var(--glass-border);
-        transition: var(--transition);
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .team-card-large:hover {
-        transform: translateY(-10px);
-        border-color: var(--accent-primary);
-        box-shadow: var(--shadow-lg);
-      }
-
-      .team-card-large::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 5px;
-        background: var(--gradient-primary);
-        transform: scaleX(0);
-        transition: var(--transition);
-      }
-
-      .team-card-large:hover::before {
-        transform: scaleX(1);
-      }
-
-      .team-avatar-large {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin: 0 auto 1.5rem;
-        border: 4px solid var(--accent-primary);
-        padding: 4px;
-        background: var(--bg-primary);
-        transition: var(--transition);
-      }
-
-      .team-card-large:hover .team-avatar-large {
-        transform: scale(1.05);
-        border-color: var(--accent-secondary);
-      }
-
-      .team-role-large {
-        color: var(--accent-primary);
-        font-weight: 700;
-        font-size: 1rem;
-        margin: 0.5rem 0 1rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-
-      .team-social {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin: 1.5rem 0 1rem;
-      }
-
-      .team-social-link {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background: var(--glass);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--text-primary);
-        text-decoration: none;
-        transition: var(--transition);
-        border: 1px solid var(--glass-border);
-      }
-
-      .team-social-link:hover {
-        background: var(--accent-primary);
-        color: var(--bg-primary);
-        transform: translateY(-3px);
-      }
-
-      .expertise-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        justify-content: center;
-        margin: 1rem 0;
-      }
-
-      .expertise-tag {
-        background: rgba(100, 255, 218, 0.1);
-        color: var(--accent-secondary);
-        padding: 0.25rem 0.75rem;
-        border-radius: 100px;
-        font-size: 0.75rem;
-        font-weight: 600;
-        border: 1px solid rgba(100, 255, 218, 0.2);
-      }
-
-      .leadership-section {
-        background: var(--bg-secondary);
-        border-radius: var(--radius-lg);
-        padding: 4rem;
-        margin: 4rem 0;
-        border: 1px solid var(--glass-border);
-      }
-
-      .leadership-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
-        margin-top: 3rem;
-      }
-
-      .values-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 2rem;
-        margin: 4rem 0;
-      }
-
-      .value-card {
-        text-align: center;
-        padding: 2rem;
-        background: var(--bg-card);
-        border-radius: var(--radius);
-        border: 1px solid var(--glass-border);
-      }
-
-      .value-icon {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        background: rgba(100, 255, 218, 0.1);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 1.5rem;
-        font-size: 2rem;
-        color: var(--accent-primary);
-      }
-
-      @media (max-width: 768px) {
-        .leadership-section {
-          padding: 2rem;
-        }
-        
-        .leadership-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./team.css" />
   </head>
   <body>
     <!-- Header & Navigation -->
@@ -239,7 +53,8 @@
         <div class="kicker">Our Experts</div>
         <h1>Meet The Team</h1>
         <p>
-          Our team of chartered engineers combines decades of international experience with innovative thinking to deliver exceptional results.
+          Our team of chartered engineers combines decades of international
+          experience with innovative thinking to deliver exceptional results.
         </p>
       </div>
     </section>
@@ -249,11 +64,12 @@
       <div class="container">
         <!-- Leadership Team -->
         <div class="leadership-section animate-on-scroll">
-          <div class="section-header" style="margin-bottom: 2rem;">
+          <div class="section-header" style="margin-bottom: 2rem">
             <div class="section-subtitle">Leadership</div>
             <h2>Executive Team</h2>
             <p>
-              Seasoned professionals guiding our vision and ensuring technical excellence across all projects.
+              Seasoned professionals guiding our vision and ensuring technical
+              excellence across all projects.
             </p>
           </div>
 
@@ -272,11 +88,18 @@
                 <span class="expertise-tag">Project Management</span>
               </div>
               <p class="text-muted">
-                Specializing in bridges and complex structures with 15 years of international experience across UK, Europe, and Asia. Led over 50 major bridge projects including the award-winning Riverdale Bridge.
+                Specializing in bridges and complex structures with 15 years of
+                international experience across UK, Europe, and Asia. Led over
+                50 major bridge projects including the award-winning Riverdale
+                Bridge.
               </p>
               <div class="team-social">
-                <a href="#" class="team-social-link"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="team-social-link"><i class="fas fa-envelope"></i></a>
+                <a href="#" class="team-social-link"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="team-social-link"
+                  ><i class="fas fa-envelope"></i
+                ></a>
               </div>
             </div>
 
@@ -294,11 +117,17 @@
                 <span class="expertise-tag">Urban Transport</span>
               </div>
               <p class="text-muted">
-                Highways and traffic engineering specialist with expertise in urban transport solutions. 12 years experience in designing major highway schemes and junction improvements across the UK.
+                Highways and traffic engineering specialist with expertise in
+                urban transport solutions. 12 years experience in designing
+                major highway schemes and junction improvements across the UK.
               </p>
               <div class="team-social">
-                <a href="#" class="team-social-link"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="team-social-link"><i class="fas fa-envelope"></i></a>
+                <a href="#" class="team-social-link"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="team-social-link"
+                  ><i class="fas fa-envelope"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -310,7 +139,8 @@
             <div class="section-subtitle">Our Engineers</div>
             <h2>Technical Experts</h2>
             <p>
-              Dedicated professionals delivering excellence across all engineering disciplines.
+              Dedicated professionals delivering excellence across all
+              engineering disciplines.
             </p>
           </div>
         </div>
@@ -331,11 +161,17 @@
               <span class="expertise-tag">Ground Improvement</span>
             </div>
             <p class="text-muted">
-              Expert in foundation design and ground improvement techniques for challenging sites. 10 years experience in geotechnical investigation and analysis.
+              Expert in foundation design and ground improvement techniques for
+              challenging sites. 10 years experience in geotechnical
+              investigation and analysis.
             </p>
             <div class="team-social">
-              <a href="#" class="team-social-link"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="team-social-link"><i class="fas fa-envelope"></i></a>
+              <a href="#" class="team-social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="team-social-link"
+                ><i class="fas fa-envelope"></i
+              ></a>
             </div>
           </div>
 
@@ -354,11 +190,17 @@
               <span class="expertise-tag">4D Planning</span>
             </div>
             <p class="text-muted">
-              Specialist in digital engineering and BIM implementation. Leading our digital transformation with expertise in clash detection and project visualization.
+              Specialist in digital engineering and BIM implementation. Leading
+              our digital transformation with expertise in clash detection and
+              project visualization.
             </p>
             <div class="team-social">
-              <a href="#" class="team-social-link"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="team-social-link"><i class="fas fa-envelope"></i></a>
+              <a href="#" class="team-social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="team-social-link"
+                ><i class="fas fa-envelope"></i
+              ></a>
             </div>
           </div>
 
@@ -377,11 +219,17 @@
               <span class="expertise-tag">Hydraulic Analysis</span>
             </div>
             <p class="text-muted">
-              Expert in flood mitigation and sustainable drainage solutions. Experienced in complex hydraulic modeling and drainage strategy development.
+              Expert in flood mitigation and sustainable drainage solutions.
+              Experienced in complex hydraulic modeling and drainage strategy
+              development.
             </p>
             <div class="team-social">
-              <a href="#" class="team-social-link"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="team-social-link"><i class="fas fa-envelope"></i></a>
+              <a href="#" class="team-social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="team-social-link"
+                ><i class="fas fa-envelope"></i
+              ></a>
             </div>
           </div>
 
@@ -400,11 +248,17 @@
               <span class="expertise-tag">Refurbishment</span>
             </div>
             <p class="text-muted">
-              Specialist in structural assessment and remediation of existing structures. Experienced in complex finite element analysis and condition surveys.
+              Specialist in structural assessment and remediation of existing
+              structures. Experienced in complex finite element analysis and
+              condition surveys.
             </p>
             <div class="team-social">
-              <a href="#" class="team-social-link"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="team-social-link"><i class="fas fa-envelope"></i></a>
+              <a href="#" class="team-social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="team-social-link"
+                ><i class="fas fa-envelope"></i
+              ></a>
             </div>
           </div>
 
@@ -423,11 +277,16 @@
               <span class="expertise-tag">Junction Design</span>
             </div>
             <p class="text-muted">
-              Experienced highway engineer specializing in geometric design and traffic modeling. Worked on major motorway and trunk road schemes.
+              Experienced highway engineer specializing in geometric design and
+              traffic modeling. Worked on major motorway and trunk road schemes.
             </p>
             <div class="team-social">
-              <a href="#" class="team-social-link"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="team-social-link"><i class="fas fa-envelope"></i></a>
+              <a href="#" class="team-social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="team-social-link"
+                ><i class="fas fa-envelope"></i
+              ></a>
             </div>
           </div>
 
@@ -446,22 +305,29 @@
               <span class="expertise-tag">Ecology</span>
             </div>
             <p class="text-muted">
-              Specialist in environmental impact assessment and sustainable engineering solutions. Ensuring all projects meet highest environmental standards.
+              Specialist in environmental impact assessment and sustainable
+              engineering solutions. Ensuring all projects meet highest
+              environmental standards.
             </p>
             <div class="team-social">
-              <a href="#" class="team-social-link"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="team-social-link"><i class="fas fa-envelope"></i></a>
+              <a href="#" class="team-social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="team-social-link"
+                ><i class="fas fa-envelope"></i
+              ></a>
             </div>
           </div>
         </div>
 
         <!-- Our Values -->
-        <div class="animate-on-scroll" style="margin: 5rem 0 2rem;">
+        <div class="animate-on-scroll" style="margin: 5rem 0 2rem">
           <div class="section-header">
             <div class="section-subtitle">Our Culture</div>
             <h2>The Values That Drive Us</h2>
             <p>
-              Our team is united by a shared commitment to excellence, innovation, and integrity.
+              Our team is united by a shared commitment to excellence,
+              innovation, and integrity.
             </p>
           </div>
         </div>
@@ -473,7 +339,8 @@
             </div>
             <h4>Excellence</h4>
             <p class="text-muted">
-              We strive for technical excellence in every project, ensuring the highest quality outcomes.
+              We strive for technical excellence in every project, ensuring the
+              highest quality outcomes.
             </p>
           </div>
 
@@ -483,7 +350,8 @@
             </div>
             <h4>Innovation</h4>
             <p class="text-muted">
-              Embracing new technologies and approaches to solve complex engineering challenges.
+              Embracing new technologies and approaches to solve complex
+              engineering challenges.
             </p>
           </div>
 
@@ -493,7 +361,8 @@
             </div>
             <h4>Integrity</h4>
             <p class="text-muted">
-              Honest, transparent, and ethical in all our professional relationships.
+              Honest, transparent, and ethical in all our professional
+              relationships.
             </p>
           </div>
 
@@ -503,18 +372,44 @@
             </div>
             <h4>Collaboration</h4>
             <p class="text-muted">
-              Working closely with clients and stakeholders to achieve shared goals.
+              Working closely with clients and stakeholders to achieve shared
+              goals.
             </p>
           </div>
         </div>
 
         <!-- Join Us CTA -->
-        <div class="cta-section" style="background: var(--bg-card); border-radius: var(--radius-lg); padding: 4rem; text-align: center; margin: 4rem 0; border: 1px solid var(--accent-primary);">
+        <div
+          class="cta-section"
+          style="
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            padding: 4rem;
+            text-align: center;
+            margin: 4rem 0;
+            border: 1px solid var(--accent-primary);
+          "
+        >
           <h2>Join Our Team</h2>
-          <p style="margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-            We're always looking for talented engineers to join our growing team. Check our current openings or send us your CV.
+          <p
+            style="
+              margin-bottom: 2rem;
+              max-width: 600px;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          >
+            We're always looking for talented engineers to join our growing
+            team. Check our current openings or send us your CV.
           </p>
-          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <div
+            style="
+              display: flex;
+              gap: 1rem;
+              justify-content: center;
+              flex-wrap: wrap;
+            "
+          >
             <a href="#" class="btn-primary">
               <i class="fas fa-briefcase"></i> View Openings
             </a>
@@ -532,7 +427,11 @@
         <div class="footer-container">
           <div class="footer-logo">
             <a href="index.html" class="logo">
-              <img src="./img/logo.svg" alt="Aakashdeep Logo" class="logo-icon" />
+              <img
+                src="./img/logo.svg"
+                alt="Aakashdeep Logo"
+                class="logo-icon"
+              />
               <div>
                 <div class="logo-text">Aakashdeep</div>
                 <div class="logo-subtext">Construction & Engineering.</div>
@@ -582,7 +481,8 @@
         </div>
 
         <div class="copyright">
-          © <span id="year">2025</span> Aakashdeep Construction & Engineering • Registered in England & Wales • Company No: 12345678
+          © <span id="year">2025</span> Aakashdeep Construction & Engineering •
+          Registered in England & Wales • Company No: 12345678
         </div>
       </div>
     </footer>
@@ -619,14 +519,15 @@
     <script src="index.js"></script>
     <script>
       // Add active class to current page in navigation
-      document.addEventListener('DOMContentLoaded', function() {
-        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-        const navLinks = document.querySelectorAll('.nav-link');
-        
-        navLinks.forEach(link => {
-          const linkPage = link.getAttribute('href');
+      document.addEventListener("DOMContentLoaded", function () {
+        const currentPage =
+          window.location.pathname.split("/").pop() || "index.html";
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        navLinks.forEach((link) => {
+          const linkPage = link.getAttribute("href");
           if (linkPage === currentPage) {
-            link.classList.add('active');
+            link.classList.add("active");
           }
         });
       });
