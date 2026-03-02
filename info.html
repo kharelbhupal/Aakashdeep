@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Our Projects - Aakashdeep Construction & Engineering</title>
+    <title>Info - Aakashdeep Construction & Engineering</title>
     <meta
       name="description"
-      content="Explore our portfolio of successful engineering projects including bridges, highways, drainage systems, and infrastructure developments."
+      content="Technical information, FAQs, and drawing lists for construction and engineering projects."
     />
     <meta name="theme-color" content="#0a192f" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./project.css" />
+    <link rel="stylesheet" href="info.css" />
   </head>
   <body>
     <!-- Header & Navigation -->
@@ -34,14 +34,12 @@
         </a>
 
         <nav class="nav-links">
-          <a href="#home" class="nav-link">Portfolio</a>
-          <a href="./services.html" class="nav-link">Services</a>
-          <!-- Residential Design. 2.Commercial Design 3. Industrial Design 4. Vaastu Counseling -->
-          <a href="./aboutus.html" class="nav-link">About Us</a>
-          <!-- 1. COmpany profile 2. Activity Gallery 3. Team 4. Job Vacancy -->
-          <a href="./info.html" class="nav-link">Info</a>
-          <!-- 1. F.A.Q 2.Tips 3. Technical Drawing list -->
-          <a href="#contact" class="nav-cta">Contact</a>
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="team.html" class="nav-link">Team</a>
+          <a href="info.html" class="nav-link active">Info</a>
+          <a href="index.html#contact" class="nav-cta">Contact</a>
         </nav>
 
         <button class="mobile-menu-btn" id="mobileMenuBtn">
@@ -54,329 +52,477 @@
     <section class="page-header">
       <div class="container">
         <div class="kicker">Technical Information</div>
-        <h1>Info</h1>
+        <h1>Info Center</h1>
         <p>
-          Delivering excellence in engineering through innovative solutions and
-          meticulous execution.
+          Essential technical information, FAQs, and drawing lists for your
+          construction and engineering projects.
         </p>
       </div>
     </section>
 
-    <!-- Project Filters -->
+    <!-- Info Filters -->
     <div class="container">
       <div class="project-filters animate-on-scroll">
-        <button class="filter-btn active" data-filter="all">F.A.Q</button>
-        <button class="filter-btn" data-filter="bridge">
+        <button class="filter-btn active" data-filter="faq">F.A.Q</button>
+        <button class="filter-btn" data-filter="drawings">
           Technical Drawing List
         </button>
-        <button class="filter-btn" data-filter="highway">Tips</button>
+        <button class="filter-btn" data-filter="tips">Tips</button>
       </div>
     </div>
 
-    <!-- Projects Grid -->
+    <!-- FAQ Content -->
     <section class="section" style="padding-top: 0">
       <div class="container">
-        <div class="projects-grid-expanded" id="projectsGrid">
-          <!-- Bridge Projects -->
-          <div class="project-card animate-on-scroll" data-category="bridge">
-            <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
-                alt="Riverdale Bridge Replacement"
-              />
-            </div>
-            <div class="project-content">
-              <div class="project-tag">Bridge Engineering</div>
-              <h4>Riverdale Bridge Replacement</h4>
-              <p class="text-muted">
-                Design and construction of a 120m composite deck bridge with
-                innovative materials and sustainable design principles.
-              </p>
-              <div
-                style="
-                  margin-top: 1rem;
-                  display: flex;
-                  gap: 1rem;
-                  font-size: 0.875rem;
-                "
-              >
-                <span><i class="fas fa-calendar"></i> 2023</span>
-                <span><i class="fas fa-map-marker-alt"></i> Yorkshire</span>
-              </div>
-            </div>
+        <!-- FAQ Section -->
+        <div id="faq-content" class="info-content active">
+          <div class="section-header animate-on-scroll">
+            <div class="section-subtitle">Common Questions</div>
+            <h2>Frequently Asked Questions</h2>
+            <p>
+              Find answers to common questions about our services, process, and
+              technical requirements.
+            </p>
           </div>
 
-          <div class="project-card animate-on-scroll" data-category="bridge">
-            <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1597347316205-b36d5b7c7e0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
-                alt="Thames Pedestrian Bridge"
-              />
-            </div>
-            <div class="project-content">
-              <div class="project-tag">Bridge Engineering</div>
-              <h4>Thames Pedestrian Bridge</h4>
-              <p class="text-muted">
-                Elegant 80m cable-stayed footbridge connecting riverside
-                communities with distinctive architectural features.
-              </p>
-              <div
-                style="
-                  margin-top: 1rem;
-                  display: flex;
-                  gap: 1rem;
-                  font-size: 0.875rem;
-                "
-              >
-                <span><i class="fas fa-calendar"></i> 2024</span>
-                <span><i class="fas fa-map-marker-alt"></i> London</span>
+          <div class="faq-container animate-on-scroll">
+            <div class="faq-item">
+              <div class="faq-question">
+                <span
+                  >What is the typical timeline for a residential project?</span
+                >
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  The timeline varies depending on project complexity.
+                  Typically, design and planning takes 4-8 weeks, approval
+                  processes 4-12 weeks, and construction 6-18 months. We provide
+                  detailed schedules during initial consultation.
+                </p>
               </div>
             </div>
-          </div>
 
-          <!-- Highway Projects -->
-          <div class="project-card animate-on-scroll" data-category="highway">
-            <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=1169&q=80"
-                alt="M6 Junction Upgrade"
-              />
-            </div>
-            <div class="project-content">
-              <div class="project-tag">Highway Design</div>
-              <h4>M6 Junction Upgrade</h4>
-              <p class="text-muted">
-                Complete redesign and signal optimization of a major motorway
-                junction, improving traffic flow by 40%.
-              </p>
-              <div
-                style="
-                  margin-top: 1rem;
-                  display: flex;
-                  gap: 1rem;
-                  font-size: 0.875rem;
-                "
-              >
-                <span><i class="fas fa-calendar"></i> 2023</span>
-                <span><i class="fas fa-map-marker-alt"></i> Birmingham</span>
+            <div class="faq-item">
+              <div class="faq-question">
+                <span
+                  >What technical drawings do I need for house
+                  construction?</span
+                >
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  For complete house construction, you need: Site Plan, Floor
+                  Plans, Elevations, Sections, Structural Drawings, Electrical
+                  Plans, Plumbing Plans, Roof Plan, Door/Window Schedule, and
+                  Finishing Details. Check our Technical Drawing List section
+                  for complete details.
+                </p>
               </div>
             </div>
-          </div>
 
-          <div class="project-card animate-on-scroll" data-category="highway">
-            <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1568607689150-57a66871d1e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
-                alt="Northern Bypass"
-              />
-            </div>
-            <div class="project-content">
-              <div class="project-tag">Highway Design</div>
-              <h4>Northern Bypass</h4>
-              <p class="text-muted">
-                8km dual carriageway bypass with 5 grade-separated junctions and
-                noise mitigation measures.
-              </p>
-              <div
-                style="
-                  margin-top: 1rem;
-                  display: flex;
-                  gap: 1rem;
-                  font-size: 0.875rem;
-                "
-              >
-                <span><i class="fas fa-calendar"></i> 2022</span>
-                <span><i class="fas fa-map-marker-alt"></i> Leeds</span>
+            <div class="faq-item">
+              <div class="faq-question">
+                <span
+                  >Do you provide structural engineering services for existing
+                  buildings?</span
+                >
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Yes, we offer structural assessments, condition surveys, and
+                  refurbishment designs for existing buildings. Our team can
+                  evaluate structural integrity and provide remediation
+                  strategies.
+                </p>
               </div>
             </div>
-          </div>
 
-          <!-- Drainage Projects -->
-          <div class="project-card animate-on-scroll" data-category="drainage">
-            <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80"
-                alt="Eastside Drainage Tunnel"
-              />
-            </div>
-            <div class="project-content">
-              <div class="project-tag">Drainage & Flood</div>
-              <h4>Eastside Drainage Tunnel</h4>
-              <p class="text-muted">
-                3km drainage tunnel and pump-station design to mitigate flooding
-                in a high-risk urban area.
-              </p>
-              <div
-                style="
-                  margin-top: 1rem;
-                  display: flex;
-                  gap: 1rem;
-                  font-size: 0.875rem;
-                "
-              >
-                <span><i class="fas fa-calendar"></i> 2024</span>
-                <span><i class="fas fa-map-marker-alt"></i> Manchester</span>
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What is BIM and how does it benefit my project?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Building Information Modeling (BIM) creates digital 3D models
+                  with intelligent data. Benefits include: better coordination
+                  between disciplines, clash detection before construction,
+                  accurate quantity takeoffs, and lifecycle management of the
+                  building.
+                </p>
               </div>
             </div>
-          </div>
 
-          <div class="project-card animate-on-scroll" data-category="drainage">
-            <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
-                alt="Sustainable Urban Drainage"
-              />
-            </div>
-            <div class="project-content">
-              <div class="project-tag">Drainage & Flood</div>
-              <h4>Green Quarter SuDS</h4>
-              <p class="text-muted">
-                Integrated sustainable drainage system for 50-hectare urban
-                development with rainwater harvesting.
-              </p>
-              <div
-                style="
-                  margin-top: 1rem;
-                  display: flex;
-                  gap: 1rem;
-                  font-size: 0.875rem;
-                "
-              >
-                <span><i class="fas fa-calendar"></i> 2023</span>
-                <span><i class="fas fa-map-marker-alt"></i> Bristol</span>
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>How do I obtain planning permission?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  We assist with planning applications by preparing required
+                  drawings, reports, and documentation. The process involves
+                  submitting to local authority with site plans, elevations, and
+                  design statements. Typical response time is 8-12 weeks.
+                </p>
               </div>
             </div>
-          </div>
 
-          <!-- Geotechnical Projects -->
-          <div
-            class="project-card animate-on-scroll"
-            data-category="geotechnical"
-          >
-            <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
-                alt="Hillside Stabilization"
-              />
-            </div>
-            <div class="project-content">
-              <div class="project-tag">Geotechnical</div>
-              <h4>Hillside Stabilization</h4>
-              <p class="text-muted">
-                Soil nailing and anchored wall system to stabilize 500m of
-                unstable slope above railway line.
-              </p>
-              <div
-                style="
-                  margin-top: 1rem;
-                  display: flex;
-                  gap: 1rem;
-                  font-size: 0.875rem;
-                "
-              >
-                <span><i class="fas fa-calendar"></i> 2023</span>
-                <span><i class="fas fa-map-marker-alt"></i> Derby</span>
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What sustainable design options do you offer?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  We incorporate sustainable features including: solar panel
+                  integration, rainwater harvesting, sustainable drainage
+                  systems (SuDS), energy-efficient insulation, and sustainable
+                  material selection to reduce environmental impact.
+                </p>
               </div>
             </div>
-          </div>
 
-          <div
-            class="project-card animate-on-scroll"
-            data-category="geotechnical"
-          >
-            <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1504917590650-8c7f8c6f7c1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
-                alt="Deep Foundations"
-              />
-            </div>
-            <div class="project-content">
-              <div class="project-tag">Geotechnical</div>
-              <h4>Tower Foundation Design</h4>
-              <p class="text-muted">
-                Deep piled foundation design for 40-story residential tower in
-                challenging ground conditions.
-              </p>
-              <div
-                style="
-                  margin-top: 1rem;
-                  display: flex;
-                  gap: 1rem;
-                  font-size: 0.875rem;
-                "
-              >
-                <span><i class="fas fa-calendar"></i> 2024</span>
-                <span><i class="fas fa-map-marker-alt"></i> Manchester</span>
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What is your fee structure?</span>
+                <i class="fas fa-chevron-down"></i>
               </div>
-            </div>
-          </div>
-
-          <!-- Structural Projects -->
-          <div
-            class="project-card animate-on-scroll"
-            data-category="structural"
-          >
-            <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1486325212027-8081e485255e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
-                alt="Heritage Building Restoration"
-              />
-            </div>
-            <div class="project-content">
-              <div class="project-tag">Structural Assessment</div>
-              <h4>Victorian Warehouse Restoration</h4>
-              <p class="text-muted">
-                Structural assessment and refurbishment design for Grade II
-                listed building conversion to modern offices.
-              </p>
-              <div
-                style="
-                  margin-top: 1rem;
-                  display: flex;
-                  gap: 1rem;
-                  font-size: 0.875rem;
-                "
-              >
-                <span><i class="fas fa-calendar"></i> 2023</span>
-                <span><i class="fas fa-map-marker-alt"></i> Liverpool</span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="project-card animate-on-scroll"
-            data-category="structural"
-          >
-            <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1545324418-cc1e3e0fa23c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
-                alt="Shopping Centre Refurbishment"
-              />
-            </div>
-            <div class="project-content">
-              <div class="project-tag">Structural Assessment</div>
-              <h4>Metro Centre Redevelopment</h4>
-              <p class="text-muted">
-                Structural assessment and strengthening design for major
-                shopping centre expansion.
-              </p>
-              <div
-                style="
-                  margin-top: 1rem;
-                  display: flex;
-                  gap: 1rem;
-                  font-size: 0.875rem;
-                "
-              >
-                <span><i class="fas fa-calendar"></i> 2022</span>
-                <span><i class="fas fa-map-marker-alt"></i> Newcastle</span>
+              <div class="faq-answer">
+                <p>
+                  We offer flexible fee structures: percentage of construction
+                  cost, fixed fee for defined scope, or hourly rates for
+                  consultations. We provide detailed proposals with cost
+                  breakdowns before project commencement.
+                </p>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Technical Drawings Section -->
+        <div id="drawings-content" class="info-content">
+          <div class="section-header animate-on-scroll">
+            <div class="section-subtitle">Documentation</div>
+            <h2>Technical Drawing List</h2>
+            <p>
+              Comprehensive list of technical drawings required for complete
+              house design and construction planning.
+            </p>
+          </div>
+
+          <div class="drawing-list">
+            <!-- 1. Site Plan -->
+            <div class="drawing-card animate-on-scroll">
+              <div class="drawing-icon">
+                <i class="fas fa-map-marked-alt"></i>
+              </div>
+              <h3>1. Site Plan (Layout Plan)</h3>
+              <p>
+                Shows the plot boundaries, building position, setbacks, access
+                road, drainage, septic tank, water supply, and landscaping.
+              </p>
+              <ul>
+                <li>
+                  <i class="fas fa-check"></i> Plot boundaries and dimensions
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Building footprint and setbacks
+                </li>
+                <li><i class="fas fa-check"></i> Access roads and parking</li>
+                <li><i class="fas fa-check"></i> Drainage and utilities</li>
+                <li><i class="fas fa-check"></i> Landscaping elements</li>
+              </ul>
+            </div>
+
+            <!-- 2. Floor Plans -->
+            <div class="drawing-card animate-on-scroll">
+              <div class="drawing-icon">
+                <i class="fas fa-draw-polygon"></i>
+              </div>
+              <h3>2. Floor Plans</h3>
+              <p>
+                Detailed layout of each floor showing room sizes, wall
+                thickness, doors, windows, stairs, and space usage.
+              </p>
+              <ul>
+                <li><i class="fas fa-check"></i> Room dimensions and labels</li>
+                <li><i class="fas fa-check"></i> Door and window locations</li>
+                <li>
+                  <i class="fas fa-check"></i> Wall thickness and materials
+                </li>
+                <li><i class="fas fa-check"></i> Staircase and circulation</li>
+                <li><i class="fas fa-check"></i> Furniture layout options</li>
+              </ul>
+            </div>
+
+            <!-- 3. Elevation Drawings -->
+            <div class="drawing-card animate-on-scroll">
+              <div class="drawing-icon">
+                <i class="fas fa-building"></i>
+              </div>
+              <h3>3. Elevation Drawings</h3>
+              <p>
+                Exterior views of the house from different sides (front, rear,
+                left, right) showing height, finishes, and architectural style.
+              </p>
+              <ul>
+                <li>
+                  <i class="fas fa-check"></i> Front, rear, and side views
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Height dimensions and levels
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Exterior finishes and materials
+                </li>
+                <li><i class="fas fa-check"></i> Window and door styles</li>
+                <li><i class="fas fa-check"></i> Roof design and features</li>
+              </ul>
+            </div>
+
+            <!-- 4. Section Drawings -->
+            <div class="drawing-card animate-on-scroll">
+              <div class="drawing-icon">
+                <i class="fas fa-cut"></i>
+              </div>
+              <h3>4. Section Drawings</h3>
+              <p>
+                Cut-through views of the building showing internal heights,
+                structural elements, floor levels, and construction details.
+              </p>
+              <ul>
+                <li><i class="fas fa-check"></i> Floor-to-floor heights</li>
+                <li><i class="fas fa-check"></i> Foundation details</li>
+                <li><i class="fas fa-check"></i> Roof construction</li>
+                <li><i class="fas fa-check"></i> Wall build-ups</li>
+                <li><i class="fas fa-check"></i> Staircase sections</li>
+              </ul>
+            </div>
+
+            <!-- 5. Structural Drawings -->
+            <div class="drawing-card animate-on-scroll">
+              <div class="drawing-icon">
+                <i class="fas fa-draw-polygon"></i>
+              </div>
+              <h3>5. Structural Drawings</h3>
+              <p>
+                Includes foundation layout, column details, beam layout, slab
+                details, reinforcement details, and structural notes for safe
+                construction.
+              </p>
+              <ul>
+                <li>
+                  <i class="fas fa-check"></i> Foundation plans and details
+                </li>
+                <li><i class="fas fa-check"></i> Column and beam layouts</li>
+                <li><i class="fas fa-check"></i> Slab reinforcement</li>
+                <li><i class="fas fa-check"></i> Structural connections</li>
+                <li><i class="fas fa-check"></i> Material specifications</li>
+              </ul>
+            </div>
+
+            <!-- 6. Electrical Drawings -->
+            <div class="drawing-card animate-on-scroll">
+              <div class="drawing-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h3>6. Electrical Drawings</h3>
+              <p>
+                Shows wiring layout, lighting points, switches, sockets,
+                distribution board, and power connections.
+              </p>
+              <ul>
+                <li><i class="fas fa-check"></i> Lighting point locations</li>
+                <li>
+                  <i class="fas fa-check"></i> Switch and socket positions
+                </li>
+                <li><i class="fas fa-check"></i> Distribution board layout</li>
+                <li><i class="fas fa-check"></i> Circuit diagrams</li>
+                <li><i class="fas fa-check"></i> Power load calculations</li>
+              </ul>
+            </div>
+
+            <!-- 7. Plumbing Drawings -->
+            <div class="drawing-card animate-on-scroll">
+              <div class="drawing-icon">
+                <i class="fas fa-water"></i>
+              </div>
+              <h3>7. Plumbing (Sanitary) Drawings</h3>
+              <p>
+                Layout of water supply lines, drainage pipes, septic tank,
+                manholes, and sanitary fixtures.
+              </p>
+              <ul>
+                <li><i class="fas fa-check"></i> Water supply line layout</li>
+                <li><i class="fas fa-check"></i> Drainage and waste pipes</li>
+                <li><i class="fas fa-check"></i> Septic tank design</li>
+                <li><i class="fas fa-check"></i> Manhole locations</li>
+                <li><i class="fas fa-check"></i> Fixture connections</li>
+              </ul>
+            </div>
+
+            <!-- 8. Roof Plan -->
+            <div class="drawing-card animate-on-scroll">
+              <div class="drawing-icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <h3>8. Roof Plan</h3>
+              <p>
+                Details of roof slope, drainage, rainwater outlets, parapet
+                walls, and waterproofing.
+              </p>
+              <ul>
+                <li><i class="fas fa-check"></i> Roof slope and direction</li>
+                <li>
+                  <i class="fas fa-check"></i> Rainwater outlets and gutters
+                </li>
+                <li><i class="fas fa-check"></i> Parapet wall details</li>
+                <li>
+                  <i class="fas fa-check"></i> Waterproofing specifications
+                </li>
+                <li><i class="fas fa-check"></i> Roof access points</li>
+              </ul>
+            </div>
+
+            <!-- 9. Door and Window Schedule -->
+            <div class="drawing-card animate-on-scroll">
+              <div class="drawing-icon">
+                <i class="fas fa-door-open"></i>
+              </div>
+              <h3>9. Door and Window Schedule</h3>
+              <p>
+                Specifications and sizes of all doors and windows with materials
+                and placement.
+              </p>
+              <ul>
+                <li><i class="fas fa-check"></i> Door types and dimensions</li>
+                <li><i class="fas fa-check"></i> Window styles and sizes</li>
+                <li><i class="fas fa-check"></i> Material specifications</li>
+                <li><i class="fas fa-check"></i> Hardware requirements</li>
+                <li><i class="fas fa-check"></i> Placement references</li>
+              </ul>
+            </div>
+
+            <!-- 10. Staircase Details -->
+            <div class="drawing-card animate-on-scroll">
+              <div class="drawing-icon">
+                <i class="fas fa-stairs"></i>
+              </div>
+              <h3>10. Staircase Details</h3>
+              <p>
+                Design and dimensions of stairs, riser and tread sizes,
+                handrails, and landings.
+              </p>
+              <ul>
+                <li><i class="fas fa-check"></i> Riser and tread dimensions</li>
+                <li><i class="fas fa-check"></i> Handrail and balustrade</li>
+                <li><i class="fas fa-check"></i> Landing details</li>
+                <li><i class="fas fa-check"></i> Structural support</li>
+                <li><i class="fas fa-check"></i> Headroom clearance</li>
+              </ul>
+            </div>
+
+            <!-- 11. Finishing Details -->
+            <div class="drawing-card animate-on-scroll">
+              <div class="drawing-icon">
+                <i class="fas fa-paint-roller"></i>
+              </div>
+              <h3>11. Finishing Details</h3>
+              <p>
+                Flooring patterns, wall finishes, paint specifications, ceiling
+                design, and materials.
+              </p>
+              <ul>
+                <li>
+                  <i class="fas fa-check"></i> Flooring patterns and materials
+                </li>
+                <li><i class="fas fa-check"></i> Wall finish specifications</li>
+                <li><i class="fas fa-check"></i> Paint colors and types</li>
+                <li><i class="fas fa-check"></i> Ceiling designs</li>
+                <li><i class="fas fa-check"></i> Material schedules</li>
+              </ul>
+            </div>
+
+            <!-- 12. Working Drawings -->
+            <div class="drawing-card animate-on-scroll">
+              <div class="drawing-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h3>12. Working Drawings</h3>
+              <p>
+                Detailed drawings used by contractors on site for accurate
+                construction.
+              </p>
+              <ul>
+                <li><i class="fas fa-check"></i> Construction details</li>
+                <li><i class="fas fa-check"></i> Assembly instructions</li>
+                <li><i class="fas fa-check"></i> Material specifications</li>
+                <li><i class="fas fa-check"></i> Tolerances and standards</li>
+                <li><i class="fas fa-check"></i> Site installation guides</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            style="text-align: center; margin: 4rem 0 2rem"
+            class="animate-on-scroll"
+          >
+            <p
+              style="
+                margin-bottom: 2rem;
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            >
+              Need a complete set of technical drawings for your project?
+              Contact our team for professional drafting services.
+            </p>
+            <a href="index.html#contact" class="btn-primary">
+              <i class="fas fa-paper-plane"></i> Request Drawing Package
+            </a>
+          </div>
+        </div>
+
+        <!-- Tips Section (Placeholder) -->
+        <div id="tips-content" class="info-content">
+          <div class="section-header animate-on-scroll">
+            <div class="section-subtitle">Coming Soon</div>
+            <h2>Construction Tips</h2>
+            <p>
+              Expert advice and tips for your construction projects will be
+              available shortly.
+            </p>
+          </div>
+          <div
+            style="
+              text-align: center;
+              padding: 4rem;
+              background: var(--bg-card);
+              border-radius: var(--radius);
+            "
+          >
+            <i
+              class="fas fa-tools"
+              style="
+                font-size: 4rem;
+                color: var(--accent-primary);
+                margin-bottom: 2rem;
+              "
+            ></i>
+            <h3>Tips Section Under Construction</h3>
+            <p class="text-muted">
+              Check back soon for valuable construction tips and best practices.
+            </p>
+          </div>
+        </div>
+
         <!-- Project Stats -->
-        <div class="project-stats animate-on-scroll">
+        <div class="project-stats animate-on-scroll" style="margin-top: 4rem">
           <div class="stats-grid-large">
             <div class="stat-item">
               <div class="stat-number">128+</div>
@@ -395,25 +541,6 @@
               <div class="stat-label">Industry Awards</div>
             </div>
           </div>
-        </div>
-
-        <!-- Testimonial/CTA -->
-        <div style="text-align: center; margin: 4rem 0">
-          <h3>Have a Similar Project in Mind?</h3>
-          <p
-            style="
-              margin-bottom: 2rem;
-              max-width: 600px;
-              margin-left: auto;
-              margin-right: auto;
-            "
-          >
-            Let's discuss how our engineering expertise can bring your vision to
-            life.
-          </p>
-          <a href="index.html#contact" class="btn-primary">
-            <i class="fas fa-comment-dots"></i> Start a Conversation
-          </a>
         </div>
       </div>
     </section>
@@ -467,10 +594,12 @@
             <div class="footer-col">
               <h4>Resources</h4>
               <ul>
+                <li><a href="info.html?filter=faq">F.A.Q</a></li>
+                <li>
+                  <a href="info.html?filter=drawings">Technical Drawing List</a>
+                </li>
+                <li><a href="info.html?filter=tips">Tips</a></li>
                 <li><a href="#">Case Studies</a></li>
-                <li><a href="#">White Papers</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">News & Events</a></li>
                 <li><a href="#">Privacy Policy</a></li>
               </ul>
             </div>
@@ -513,73 +642,6 @@
       ></a>
     </div>
 
-    <script src="index.js"></script>
-    <script>
-      // Add active class to current page in navigation
-      document.addEventListener("DOMContentLoaded", function () {
-        const currentPage =
-          window.location.pathname.split("/").pop() || "index.html";
-        const navLinks = document.querySelectorAll(".nav-link");
-
-        navLinks.forEach((link) => {
-          const linkPage = link.getAttribute("href");
-          if (linkPage === currentPage) {
-            link.classList.add("active");
-          }
-        });
-
-        // Project filtering
-        const filterBtns = document.querySelectorAll(".filter-btn");
-        const projectCards = document.querySelectorAll(".project-card");
-
-        filterBtns.forEach((btn) => {
-          btn.addEventListener("click", () => {
-            // Remove active class from all buttons
-            filterBtns.forEach((b) => b.classList.remove("active"));
-            // Add active class to clicked button
-            btn.classList.add("active");
-
-            const filterValue = btn.getAttribute("data-filter");
-
-            projectCards.forEach((card) => {
-              if (
-                filterValue === "all" ||
-                card.getAttribute("data-category") === filterValue
-              ) {
-                card.style.display = "block";
-                setTimeout(() => {
-                  card.style.opacity = "1";
-                  card.style.transform = "scale(1)";
-                }, 50);
-              } else {
-                card.style.opacity = "0";
-                card.style.transform = "scale(0.8)";
-                setTimeout(() => {
-                  card.style.display = "none";
-                }, 300);
-              }
-            });
-          });
-        });
-      });
-
-      // Animation on scroll
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        });
-      }, observerOptions);
-
-      document.querySelectorAll(".animate-on-scroll").forEach((el) => {
-        observer.observe(el);
-      });
-    </script>
+    <script src="info.js"></script>
   </body>
 </html>
