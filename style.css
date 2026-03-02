@@ -32,7 +32,7 @@
   --radius-sm: 10px;
 
   /* Layout */
-  --max-width: 1350px;
+  --max-width: 1600px;
 
   /* Motion */
   --transition: all 0.25s ease;
@@ -330,11 +330,9 @@ a {
 .logo-icon {
   align-items: center;
   justify-content: center;
-  background: var(--gradient-primary);
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 58px;
   object-fit: contain;
-  color: #faffff;
   border-radius: 10px;
 }
 .logo-text {
