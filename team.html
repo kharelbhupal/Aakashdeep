@@ -505,13 +505,22 @@
           "
         ></i
       ></a>
-      <a href="#" class="social-link"
+      <a
+        href="https://www.linkedin.com/company/aakashdeep/"
+        target="_blank"
+        class="social-link"
         ><i class="fab fa-linkedin-in" style="color: #0a66c2"></i
       ></a>
-      <a href="#" class="social-link"
+      <a
+        href="https://www.facebook.com/profile.php?id=61577831923705"
+        target="_blank"
+        class="social-link"
         ><i class="fab fa-facebook" style="color: #1877f2"></i
       ></a>
-      <a href="#" class="social-link"
+      <a
+        href="https://www.instagram.com/aakashdeep_consulting?igsh=NWpkbHJuZmI0NGNs"
+        target="_blank"
+        class="social-link"
         ><i class="fab fa-instagram" style="color: #e1306c"></i
       ></a>
       <a href="#" class="social-link"
@@ -519,39 +528,6 @@
       ></a>
     </div>
 
-    <script src="index.js"></script>
-    <script>
-      // Add active class to current page in navigation
-      document.addEventListener("DOMContentLoaded", function () {
-        const currentPage =
-          window.location.pathname.split("/").pop() || "index.html";
-        const navLinks = document.querySelectorAll(".nav-link");
-
-        navLinks.forEach((link) => {
-          const linkPage = link.getAttribute("href");
-          if (linkPage === currentPage) {
-            link.classList.add("active");
-          }
-        });
-      });
-
-      // Animation for team cards
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        });
-      }, observerOptions);
-
-      document.querySelectorAll(".animate-on-scroll").forEach((el) => {
-        observer.observe(el);
-      });
-    </script>
+    <script src="team.js"></script>
   </body>
 </html>
