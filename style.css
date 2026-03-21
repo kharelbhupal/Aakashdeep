@@ -450,7 +450,7 @@ a {
   overflow: hidden;
   transition: var(--transition);
   background:
-    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url("./img/cover1.png");
   background-size: cover;
   background-position: center top;
@@ -639,6 +639,7 @@ a {
 }
 
 .linktoservices a:hover {
+  text-decoration: underline;
   text-align: center;
   color: white;
   color: var(--accent-primary);

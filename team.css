@@ -60,10 +60,14 @@
 .team-card-large:hover::before {
   transform: scaleX(1);
 }
+.ceo {
+  justify-self: center;
+  width: 40rem;
+}
 
 .team-avatar-large {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto 1.5rem;
@@ -182,5 +186,9 @@
 
   .leadership-grid {
     grid-template-columns: 1fr;
+  }
+  .ceo {
+    justify-self: center;
+    width: 20rem;
   }
 }
