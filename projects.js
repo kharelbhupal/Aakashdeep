@@ -45,6 +45,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Mobile menu toggle
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const navLinks = document.querySelector(".nav-links");
+
+mobileMenuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("mobile-open");
+
+  mobileMenuBtn.innerHTML = navLinks.classList.contains("mobile-open")
+    ? '<i class="fas fa-times"></i>'
+    : '<i class="fas fa-bars"></i>';
+});
+
 // Animation on scroll
 const observerOptions = {
   threshold: 0.1,

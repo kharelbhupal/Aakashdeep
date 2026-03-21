@@ -14,17 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobileMenuBtn = document.getElementById("mobileMenuBtn");
   const navLinks = document.querySelector(".nav-links");
 
-  if (mobileMenuBtn) {
-    mobileMenuBtn.addEventListener("click", () => {
-      if (navLinks.style.display === "flex") {
-        navLinks.style.display = "none";
-        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-      } else {
-        navLinks.style.display = "flex";
-        mobileMenuBtn.innerHTML = '<i class="fas fa-times"></i>';
-      }
-    });
-  }
+  mobileMenuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("mobile-open");
+
+    mobileMenuBtn.innerHTML = navLinks.classList.contains("mobile-open")
+      ? '<i class="fas fa-times"></i>'
+      : '<i class="fas fa-bars"></i>';
+  });
 
   // Update year in footer
   document.getElementById("year").textContent = new Date().getFullYear();

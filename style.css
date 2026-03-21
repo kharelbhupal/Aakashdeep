@@ -254,7 +254,20 @@ a {
   }
 
   .nav-links {
-    display: none !important;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--bg-primary);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    border-top: 1px solid var(--glass-border);
   }
 
   .mobile-menu-btn {

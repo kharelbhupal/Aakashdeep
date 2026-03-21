@@ -48,34 +48,16 @@ form.addEventListener("submit", function (e) {
   }, 1500);
 });
 
-// Copy email to clipboard
-document.getElementById("copyEmail").addEventListener("click", async () => {
-  try {
-    await navigator.clipboard.writeText("info@structura.com");
-    const btn = document.getElementById("copyEmail");
-    const originalText = btn.innerHTML;
-    btn.innerHTML = '<i class="fas fa-check"></i> Email Copied!';
-    btn.style.color = "var(--accent-primary)";
-
-    setTimeout(() => {
-      btn.innerHTML = originalText;
-      btn.style.color = "";
-    }, 2000);
-  } catch (err) {
-    alert("Could not copy. Email: info@structura.com");
-  }
-});
-
 // Mobile menu toggle
 const mobileMenuBtn = document.getElementById("mobileMenuBtn");
 const navLinks = document.querySelector(".nav-links");
 
 mobileMenuBtn.addEventListener("click", () => {
-  navLinks.style.display = navLinks.style.display === "flex" ? "none" : "flex";
-  mobileMenuBtn.innerHTML =
-    navLinks.style.display === "flex"
-      ? '<i class="fas fa-times"></i>'
-      : '<i class="fas fa-bars"></i>';
+  navLinks.classList.toggle("mobile-open");
+
+  mobileMenuBtn.innerHTML = navLinks.classList.contains("mobile-open")
+    ? '<i class="fas fa-times"></i>'
+    : '<i class="fas fa-bars"></i>';
 });
 
 // Update year in footer
