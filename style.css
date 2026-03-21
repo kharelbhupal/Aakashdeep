@@ -451,7 +451,7 @@ a {
   transition: var(--transition);
   background:
     linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("./img/cover.png");
+    url("./img/cover1.png");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
