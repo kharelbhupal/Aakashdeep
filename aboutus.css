@@ -251,6 +251,19 @@
   box-shadow: var(--shadow-lg);
 }
 
+.ceo {
+  display: flex;
+  justify-content: center;
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.ceo .team-card-large {
+  width: 100%;
+  max-width: 680px;
+  min-width: 280px;
+}
+
 .team-avatar-large {
   width: 250px;
   height: 250px;
@@ -410,10 +423,21 @@
   }
 
   .leadership-section {
-    padding: 2rem;
+    padding: 1.5rem;
   }
 
   .coming-soon-card {
     padding: 3rem 1.5rem;
+  }
+  .ceo {
+    grid-column: auto; /* reset */
+  }
+  .team-avatar-large {
+    width: 150px;
+    height: 150px;
+  }
+  .ceo .team-card-large {
+    max-width: 100%;
+    min-width: unset; /* allow normal scaling */
   }
 }
