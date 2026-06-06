@@ -89,37 +89,40 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const form = document.getElementById("contactForm");
-const formStatus = document.getElementById("formStatus");
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  const formStatus = document.getElementById("formStatus");
 
-form.addEventListener("submit", async function (e) {
-  e.preventDefault();
+  if (!form || !formStatus) return;
 
-  formStatus.textContent = "Sending...";
-  formStatus.style.color = "orange";
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-  const formData = new FormData(form);
+    formStatus.textContent = "Sending...";
+    formStatus.style.color = "orange";
 
-  try {
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
+    const formData = new FormData(form);
 
-    const result = await response.json();
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
 
-    if (result.success) {
-      formStatus.textContent =
-        "✔ Thank you! We will reach you within 24 hours.";
-      formStatus.style.color = "green";
+      const result = await response.json();
 
-      form.reset();
-    } else {
-      formStatus.textContent = "❌ Failed. Try again.";
+      if (result.success) {
+        formStatus.textContent =
+          "✔ Thank you! We will reach you within 24 hours.";
+        formStatus.style.color = "green";
+        form.reset();
+      } else {
+        formStatus.textContent = "❌ Failed. Try again.";
+        formStatus.style.color = "red";
+      }
+    } catch (error) {
+      formStatus.textContent = "❌ Network error.";
       formStatus.style.color = "red";
     }
-  } catch (error) {
-    formStatus.textContent = "❌ Network error. Try again later.";
-    formStatus.style.color = "red";
-  }
+  });
 });
