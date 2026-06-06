@@ -110,3 +110,46 @@ window.addEventListener("scroll", () => {
     floating.style.bottom = "20px";
   }
 });
+
+async function handleSubmit(event) {
+  event.preventDefault();
+
+  const form = document.getElementById("contactForm");
+  const formStatus = document.getElementById("formStatus");
+  const submitBtn = form.querySelector("button[type='submit']");
+
+  // Show loading state
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = "Sending...";
+
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      // SUCCESS POPUP
+      alert("Message sent successfully!");
+
+      // reset form
+      form.reset();
+      formStatus.innerHTML = "✔ Message sent successfully.";
+      formStatus.style.color = "green";
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  } catch (error) {
+    alert("Network error. Please try again later.");
+  }
+
+  // Reset button
+  submitBtn.disabled = false;
+  submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+
+  return false;
+}
