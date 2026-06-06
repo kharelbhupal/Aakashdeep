@@ -124,6 +124,8 @@ async function handleSubmit(event) {
   });
 
   const result = await response.json();
+  formStatus.innerHTML = "✔ Thank you! We will reach you within 24 hours.";
+  formStatus.style.color = "green";
 
   if (result.success) {
     alert("Message sent successfully!");
