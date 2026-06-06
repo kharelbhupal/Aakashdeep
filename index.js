@@ -26,28 +26,6 @@ document.querySelectorAll(".animate-on-scroll").forEach((el) => {
   observer.observe(el);
 });
 
-// Form submission
-const form = document.getElementById("contactForm");
-const status = document.getElementById("formStatus");
-
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  status.textContent = "Sending your message...";
-  status.style.color = "var(--accent-primary)";
-
-  // Simulate form submission
-  setTimeout(() => {
-    status.textContent =
-      "Thank you! Your message has been sent. We'll respond within 24 hours.";
-    form.reset();
-
-    // Reset status after 5 seconds
-    setTimeout(() => {
-      status.textContent = "";
-    }, 5000);
-  }, 1500);
-});
-
 // Mobile menu toggle
 const mobileMenuBtn = document.getElementById("mobileMenuBtn");
 const navLinks = document.querySelector(".nav-links");
@@ -111,13 +89,14 @@ window.addEventListener("scroll", () => {
   }
 });
 
+const form = document.getElementById("contactForm");
 const formStatus = document.getElementById("formStatus");
 
 form.addEventListener("submit", async function (e) {
   e.preventDefault();
 
   formStatus.textContent = "Sending...";
-  formStatus.style.color = "blue";
+  formStatus.style.color = "orange";
 
   const formData = new FormData(form);
 
